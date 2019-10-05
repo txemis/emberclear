@@ -675,6 +675,15 @@
   dependencies:
     "@babel/helper-plugin-utils" "^7.0.0"
 
+"@babel/plugin-transform-typescript@^7.7.4", "@babel/plugin-transform-typescript@~7.7.0":
+  version "7.7.4"
+  resolved "https://registry.npmjs.org/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.7.4.tgz#2974fd05f4e85c695acaf497f432342de9fc0636"
+  integrity sha512-X8e3tcPEKnwwPVG+vP/vSqEShkwODOEeyQGod82qrIuidwIrfnsGn11qPM1jBLF4MqguTXXYzm58d0dY+/wdpg==
+  dependencies:
+    "@babel/helper-create-class-features-plugin" "^7.7.4"
+    "@babel/helper-plugin-utils" "^7.0.0"
+    "@babel/plugin-syntax-typescript" "^7.7.4"
+
 "@babel/plugin-transform-typescript@~7.4.0":
   version "7.4.5"
   resolved "https://registry.npmjs.org/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.4.5.tgz#ab3351ba35307b79981993536c93ff8be050ba28"
@@ -691,15 +700,6 @@
     "@babel/helper-create-class-features-plugin" "^7.5.5"
     "@babel/helper-plugin-utils" "^7.0.0"
     "@babel/plugin-syntax-typescript" "^7.2.0"
-
-"@babel/plugin-transform-typescript@~7.7.0":
-  version "7.7.4"
-  resolved "https://registry.npmjs.org/@babel/plugin-transform-typescript/-/plugin-transform-typescript-7.7.4.tgz#2974fd05f4e85c695acaf497f432342de9fc0636"
-  integrity sha512-X8e3tcPEKnwwPVG+vP/vSqEShkwODOEeyQGod82qrIuidwIrfnsGn11qPM1jBLF4MqguTXXYzm58d0dY+/wdpg==
-  dependencies:
-    "@babel/helper-create-class-features-plugin" "^7.7.4"
-    "@babel/helper-plugin-utils" "^7.0.0"
-    "@babel/plugin-syntax-typescript" "^7.7.4"
 
 "@babel/plugin-transform-unicode-regex@^7.7.4":
   version "7.7.4"
@@ -775,9 +775,9 @@
     semver "^5.5.0"
 
 "@babel/register@^7.6.0":
-  version "7.7.4"
-  resolved "https://registry.npmjs.org/@babel/register/-/register-7.7.4.tgz#45a4956471a9df3b012b747f5781cc084ee8f128"
-  integrity sha512-/fmONZqL6ZMl9KJUYajetCrID6m0xmL4odX7v+Xvoxcv0DdbP/oO0TWIeLUCHqczQ6L6njDMqmqHFy2cp3FFsA==
+  version "7.7.0"
+  resolved "https://registry.npmjs.org/@babel/register/-/register-7.7.0.tgz#4e23ecf840296ef79c605baaa5c89e1a2426314b"
+  integrity sha512-HV3GJzTvSoyOMWGYn2TAh6uL6g+gqKTgEZ99Q3+X9UURT1VPT/WcU46R61XftIc5rXytcOHZ4Z0doDlsjPomIg==
   dependencies:
     find-cache-dir "^2.0.0"
     lodash "^4.17.13"
@@ -1033,24 +1033,24 @@
     ember-cli-htmlbars-inline-precompile "^2.1.0"
     ember-test-waiters "^1.1.1"
 
-"@embroider/babel-loader-7@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/@embroider/babel-loader-7/-/babel-loader-7-0.9.0.tgz#e1e12f88ff884f5635a3bed6a87f677e1b5b98d4"
-  integrity sha512-FlcoDiMG+p7+P5WyGqofi6sEnJYzUorXpn5R6uaWszcA1p8ld2zof9/pMeMh06Q1AJYHX4dV7PfSqnbAgPJ5LQ==
+"@embroider/babel-loader-7@0.10.0":
+  version "0.10.0"
+  resolved "https://registry.npmjs.org/@embroider/babel-loader-7/-/babel-loader-7-0.10.0.tgz#b7c20991c15145abf3a5f82f1e58ae26a865955c"
+  integrity sha512-QckHx2KPGVdQl4zjHE8JBXqhocZBQcT2nPAmIxbrfHUaBX8LepoTtj+2qM4TcHu6NWIdvP5myIeNxYOACR7P2w==
   dependencies:
     babel-core "^6.26.3"
     babel-loader "7"
 
-"@embroider/compat@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/@embroider/compat/-/compat-0.9.0.tgz#f331415fa511c22beb85572b5abd12c4534d11b4"
-  integrity sha512-LGBpXfcRLC9WRYSAtFLIlT/7Ic2kV0K+SXq2ZNRaXr7WvCQqiLujOy+zYRuGzOEJ/zB8uckPIrrnPcs+85Vynw==
+"@embroider/compat@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.npmjs.org/@embroider/compat/-/compat-0.10.0.tgz#a242b43fc46ad515f88590851af6d8e1cd8376f5"
+  integrity sha512-wQE1HgJlswJlXNg5+K86laqBlnzuaJOdXokUoAjpJ6HRFoPx21Li7c4t95bnU04LId2CQqIwi7yDNFS7cYpIuw==
   dependencies:
     "@babel/core" "^7.2.2"
     "@babel/preset-env" "^7.4.5"
     "@babel/traverse" "^7.2.4"
     "@babel/types" "^7.3.2"
-    "@embroider/macros" "0.9.0"
+    "@embroider/macros" "0.10.0"
     assert-never "^1.1.0"
     babel-core "^6.26.3"
     babylon "^6.18.0"
@@ -1062,7 +1062,8 @@
     broccoli-plugin "^1.3.0"
     broccoli-source "^1.1.0"
     debug "^3.1.0"
-    ember-cli-htmlbars "^3.0.1"
+    ember-cli-htmlbars "^4.0.9"
+    ember-cli-htmlbars-3 "npm:ember-cli-htmlbars@3"
     fs-extra "^7.0.0"
     fs-tree-diff "^2.0.0"
     jsdom "^12.0.0"
@@ -1075,6 +1076,41 @@
     tree-sync "^2.0.0"
     typescript-memoize "^1.0.0-alpha.3"
     walk-sync "^1.1.3"
+
+"@embroider/core@0.10.0", "@embroider/core@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.npmjs.org/@embroider/core/-/core-0.10.0.tgz#5c14ebc564b770c54759466c20d1367a7518e540"
+  integrity sha512-NKuDxkbxkK9nWT4BIjcY2zuxlSJ5gnR61Ak+sgKk6zcRXdJhNYGCClpw47jSi7RGxGGDduov17OJEBcMsJR/Zg==
+  dependencies:
+    "@babel/core" "^7.2.2"
+    "@babel/parser" "^7.3.4"
+    "@babel/plugin-syntax-dynamic-import" "^7.2.0"
+    "@babel/traverse" "^7.3.4"
+    "@babel/types" "^7.3.4"
+    "@embroider/macros" "0.10.0"
+    assert-never "^1.1.0"
+    babel-plugin-syntax-dynamic-import "^6.18.0"
+    broccoli-persistent-filter "^2.2.2"
+    broccoli-plugin "^3.0.0"
+    broccoli-source "^1.1.0"
+    debug "^3.1.0"
+    fast-sourcemap-concat "^1.4.0"
+    filesize "^4.1.2"
+    fs-extra "^7.0.1"
+    fs-tree-diff "^2.0.0"
+    handlebars "^4.1.0"
+    js-string-escape "^1.0.1"
+    jsdom "^12.0.0"
+    json-stable-stringify "^1.0.1"
+    lodash "^4.17.10"
+    pkg-up "^2.0.0"
+    resolve "^1.8.1"
+    resolve-package-path "^1.2.2"
+    semver "^5.5.0"
+    strip-bom "^3.0.0"
+    typescript-memoize "^1.0.0-alpha.3"
+    walk-sync "^1.1.3"
+    wrap-legacy-hbs-plugin-if-needed "^1.0.1"
 
 "@embroider/core@0.4.3", "@embroider/core@^0.4.3":
   version "0.4.3"
@@ -1110,40 +1146,17 @@
     typescript-memoize "^1.0.0-alpha.3"
     walk-sync "^1.1.3"
 
-"@embroider/core@0.9.0", "@embroider/core@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/@embroider/core/-/core-0.9.0.tgz#544f7bc8d37fe0adad25ec6c6c38eed7b17edc7c"
-  integrity sha512-H1jFMXFt+y5Ga+ieg4tGY1/df07L21IQ+zuVbRjrtkvGsD7RruaQ8uni+enDHYM3Wv/lOQ0vBFelmSH5f7DJ0A==
+"@embroider/macros@0.10.0":
+  version "0.10.0"
+  resolved "https://registry.npmjs.org/@embroider/macros/-/macros-0.10.0.tgz#77babc51369467e4f2e0a26c4cae9668d4d30924"
+  integrity sha512-ztEs+C/y89kP4GjptFgNWTJ4mZ22KqzToqTSztpGghX1wWMmzS67UWkB9ZSYJhXFZ7pIZzVeChgMN9E+poR3+A==
   dependencies:
     "@babel/core" "^7.2.2"
-    "@babel/parser" "^7.3.4"
-    "@babel/plugin-syntax-dynamic-import" "^7.2.0"
-    "@babel/traverse" "^7.3.4"
-    "@babel/types" "^7.3.4"
-    "@embroider/macros" "0.9.0"
-    assert-never "^1.1.0"
-    babel-plugin-syntax-dynamic-import "^6.18.0"
-    broccoli-persistent-filter "^2.2.2"
-    broccoli-plugin "^3.0.0"
-    broccoli-source "^1.1.0"
-    debug "^3.1.0"
-    fast-sourcemap-concat "^1.4.0"
-    filesize "^4.1.2"
-    fs-extra "^7.0.1"
-    fs-tree-diff "^2.0.0"
-    handlebars "^4.1.0"
-    js-string-escape "^1.0.1"
-    jsdom "^12.0.0"
-    json-stable-stringify "^1.0.1"
-    lodash "^4.17.10"
-    pkg-up "^2.0.0"
+    "@babel/traverse" "^7.2.4"
+    "@babel/types" "^7.3.2"
+    "@embroider/core" "0.10.0"
     resolve "^1.8.1"
-    resolve-package-path "^1.2.2"
-    semver "^5.5.0"
-    strip-bom "^3.0.0"
-    typescript-memoize "^1.0.0-alpha.3"
-    walk-sync "^1.1.3"
-    wrap-legacy-hbs-plugin-if-needed "^1.0.1"
+    semver "^5.6.0"
 
 "@embroider/macros@0.4.3":
   version "0.4.3"
@@ -1157,25 +1170,13 @@
     resolve "^1.8.1"
     semver "^5.6.0"
 
-"@embroider/macros@0.9.0":
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/@embroider/macros/-/macros-0.9.0.tgz#ace149130736035d23222d1971ee31db010708f2"
-  integrity sha512-q4cYrt/8lLBvhx6/2qnFAojKNohJh/gbilGTcXbWuVGRgQHeIB7DwEGknnCQtWTgDq9hl650HagdRCBu/575rw==
+"@embroider/webpack@^0.10.0":
+  version "0.10.0"
+  resolved "https://registry.npmjs.org/@embroider/webpack/-/webpack-0.10.0.tgz#29dcd0be1bea13d07c5778e4ccf0abd203f4593a"
+  integrity sha512-u3mmXYUDYCN6gtYStbityMZzXSuy0/4viQri/yu/DlkQexL+A1p30uNhqoKprmWSlPD3Qh5sZUw7uMlx0vXvEg==
   dependencies:
     "@babel/core" "^7.2.2"
-    "@babel/traverse" "^7.2.4"
-    "@babel/types" "^7.3.2"
-    "@embroider/core" "0.9.0"
-    resolve "^1.8.1"
-    semver "^5.6.0"
-
-"@embroider/webpack@^0.9.0":
-  version "0.9.0"
-  resolved "https://registry.npmjs.org/@embroider/webpack/-/webpack-0.9.0.tgz#a6916c6cd082220a22a48866029826c90440e9d4"
-  integrity sha512-z50A+U5UdQjwTXu4Aip3s0BiSXOiWbiHxfUPGi3apgjdXyaRatX5UbAybkzN9TiFU5jag3LN+ZWyD+LsCVRgbw==
-  dependencies:
-    "@babel/core" "^7.2.2"
-    "@embroider/babel-loader-7" "0.9.0"
+    "@embroider/babel-loader-7" "0.10.0"
     babel-core "^6.26.3"
     babel-loader "8"
     babel-preset-env "^1.7.0"
@@ -5429,6 +5430,14 @@ dompurify@^2.0.7:
   resolved "https://registry.npmjs.org/dompurify/-/dompurify-2.0.7.tgz#f8266ad38fe1602fb5b3222f31eedbf5c16c4fd5"
   integrity sha512-S3O0lk6rFJtO01ZTzMollCOGg+WAtCwS3U5E2WSDY/x/sy7q70RjEC4Dmrih5/UqzLLB9XoKJ8KqwBxaNvBu4A==
 
+dot-case@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/dot-case/-/dot-case-3.0.2.tgz#6758d86d3e7b69adc0fcfad23a845676c329f7d9"
+  integrity sha512-z3vMZEW2o3btKlM9I6FQF0pIWTzBuW+udrAaJr+A6JA3+p62ADZjeFthKxqxKHZlUxQmkKeEWvaKLJdwpc5u6g==
+  dependencies:
+    no-case "^3.0.2"
+    tslib "^1.10.0"
+
 dot-prop@^5.1.0:
   version "5.2.0"
   resolved "https://registry.npmjs.org/dot-prop/-/dot-prop-5.2.0.tgz#c34ecc29556dc45f1f4c22697b6f4904e0cc4fcb"
@@ -5703,6 +5712,16 @@ ember-cli-get-component-path-option@^1.0.0:
   resolved "https://registry.npmjs.org/ember-cli-get-component-path-option/-/ember-cli-get-component-path-option-1.0.0.tgz#0d7b595559e2f9050abed804f1d8eff1b08bc771"
   integrity sha1-DXtZVVni+QUKvtgE8djv8bCLx3E=
 
+"ember-cli-htmlbars-3@npm:ember-cli-htmlbars@3", ember-cli-htmlbars@^3.0.0, ember-cli-htmlbars@^3.0.1:
+  version "3.1.0"
+  resolved "https://registry.npmjs.org/ember-cli-htmlbars/-/ember-cli-htmlbars-3.1.0.tgz#87806c2a0bca2ab52d4fb8af8e2215c1ca718a99"
+  integrity sha512-cgvRJM73IT0aePUG7oQ/afB7vSRBV3N0wu9BrWhHX2zkR7A7cUBI7KC9VPk6tbctCXoM7BRGsCC4aIjF7yrfXA==
+  dependencies:
+    broccoli-persistent-filter "^2.3.1"
+    hash-for-dep "^1.5.1"
+    json-stable-stringify "^1.0.1"
+    strip-bom "^3.0.0"
+
 ember-cli-htmlbars-inline-precompile@^2.1.0:
   version "2.1.0"
   resolved "https://registry.npmjs.org/ember-cli-htmlbars-inline-precompile/-/ember-cli-htmlbars-inline-precompile-2.1.0.tgz#61b91ff1879d44ae504cadb46fb1f2604995ae08"
@@ -5713,16 +5732,6 @@ ember-cli-htmlbars-inline-precompile@^2.1.0:
     hash-for-dep "^1.2.3"
     heimdalljs-logger "^0.1.9"
     silent-error "^1.1.0"
-
-ember-cli-htmlbars@^3.0.0, ember-cli-htmlbars@^3.0.1:
-  version "3.1.0"
-  resolved "https://registry.npmjs.org/ember-cli-htmlbars/-/ember-cli-htmlbars-3.1.0.tgz#87806c2a0bca2ab52d4fb8af8e2215c1ca718a99"
-  integrity sha512-cgvRJM73IT0aePUG7oQ/afB7vSRBV3N0wu9BrWhHX2zkR7A7cUBI7KC9VPk6tbctCXoM7BRGsCC4aIjF7yrfXA==
-  dependencies:
-    broccoli-persistent-filter "^2.3.1"
-    hash-for-dep "^1.5.1"
-    json-stable-stringify "^1.0.1"
-    strip-bom "^3.0.0"
 
 ember-cli-htmlbars@^4.0.1:
   version "4.0.8"
@@ -5745,7 +5754,7 @@ ember-cli-htmlbars@^4.0.1:
     strip-bom "^4.0.0"
     walk-sync "^2.0.2"
 
-ember-cli-htmlbars@^4.2.0:
+ember-cli-htmlbars@^4.0.9, ember-cli-htmlbars@^4.2.0:
   version "4.2.0"
   resolved "https://registry.npmjs.org/ember-cli-htmlbars/-/ember-cli-htmlbars-4.2.0.tgz#a3694ab31f6d571c45786a3041b9c76e4eb30989"
   integrity sha512-YymJLg/rRiclK5jxbTFpaRNlbS+f3SY6SplnMExjcrcbSjMRsBuams50+mppENEu7iKfd6PBqH3FHVbYsukHSQ==
@@ -5908,6 +5917,25 @@ ember-cli-typescript@^3.0.0, ember-cli-typescript@^3.1.1:
   version "3.1.1"
   resolved "https://registry.npmjs.org/ember-cli-typescript/-/ember-cli-typescript-3.1.1.tgz#a5a12ebf915e43ded7bf6bb460ecea4b67b0d95b"
   integrity sha512-HCjM5EZ29Yh94Jy/M2+MVkS9LdtOoGYtYLIcZ4F7umJaRJM67ku/xCyN/2r+uTeYTNdpJN9+HWx30a6yyAbfRA==
+  dependencies:
+    "@babel/plugin-proposal-nullish-coalescing-operator" "^7.4.4"
+    "@babel/plugin-proposal-optional-chaining" "^7.6.0"
+    "@babel/plugin-transform-typescript" "~7.7.0"
+    ansi-to-html "^0.6.6"
+    debug "^4.0.0"
+    ember-cli-babel-plugin-helpers "^1.0.0"
+    execa "^3.0.0"
+    fs-extra "^8.0.0"
+    resolve "^1.5.0"
+    rsvp "^4.8.1"
+    semver "^6.0.0"
+    stagehand "^1.0.0"
+    walk-sync "^2.0.0"
+
+ember-cli-typescript@^3.1.2:
+  version "3.1.2"
+  resolved "https://registry.npmjs.org/ember-cli-typescript/-/ember-cli-typescript-3.1.2.tgz#696454177c3039b711a19fc0669dfc7c2ce81358"
+  integrity sha512-J7sC9EL652pEplZRlCzhGoW0T4F6pt29vhEcK4kA397YEootoAZlqTdIhRpR13o8fmTJ8xRWtXEC7KrPPnqamQ==
   dependencies:
     "@babel/plugin-proposal-nullish-coalescing-operator" "^7.4.4"
     "@babel/plugin-proposal-optional-chaining" "^7.6.0"
@@ -6509,10 +6537,10 @@ ember-source@^3.15.0:
     semver "^6.1.1"
     silent-error "^1.1.1"
 
-ember-template-lint@1.10.0:
-  version "1.10.0"
-  resolved "https://registry.npmjs.org/ember-template-lint/-/ember-template-lint-1.10.0.tgz#490acdb312fa8e2d484c397c03b26bb366bc6f24"
-  integrity sha512-R7RsmOFoC+LlvM+Wu7TvSj8ZQxIM8ryCFCdGfcOEBCdlqRo6vgJ/jHy8CRITc8RlbrKJDPcaNDxHcNWfto1BqA==
+ember-template-lint@1.12.1:
+  version "1.12.1"
+  resolved "https://registry.npmjs.org/ember-template-lint/-/ember-template-lint-1.12.1.tgz#98fb0110a97b50818cfa88f2599ac5b0047c0c95"
+  integrity sha512-wgnEQNRHxZ6UoRINbX1HMzpa67bt8UhuRsi1Ody5rlwgPlqVy2BIhIq7u+BGTgvNXGhPqKaKuiZKcI/EZh0CXg==
   dependencies:
     "@glimmer/syntax" "^0.44.0"
     chalk "^2.0.0"
@@ -6821,14 +6849,14 @@ eslint-config-prettier@^6.7.0:
   dependencies:
     get-stdin "^6.0.0"
 
-eslint-plugin-ember@7.7.1:
-  version "7.7.1"
-  resolved "https://registry.npmjs.org/eslint-plugin-ember/-/eslint-plugin-ember-7.7.1.tgz#41398c9a32304c21547fb969c689cd3300718f9d"
-  integrity sha512-9nWU7QAdfzKPHlZ1C8yjjyRkvsIv4Lea3saD2H7NnIep8Z4YN9+AKfycejniYjeLvxYMsSqI+JFXPUcbpgZhhw==
+eslint-plugin-ember@7.7.2:
+  version "7.7.2"
+  resolved "https://registry.npmjs.org/eslint-plugin-ember/-/eslint-plugin-ember-7.7.2.tgz#ba4afe59e7b2efdfbb85bc16484c95aaa45b8392"
+  integrity sha512-Ua7+xePz8m0BrqSHfYibkRXWQMMb5RBsH9ohZy2a7ri+s6+UQre9x3BxPpawCLZMzQzIG4vQh93YiVGCSv3XYA==
   dependencies:
     "@ember-data/rfc395-data" "^0.0.4"
     ember-rfc176-data "^0.3.12"
-    snake-case "^2.1.0"
+    snake-case "^3.0.2"
 
 eslint-plugin-es@^2.0.0:
   version "2.0.0"
@@ -8023,7 +8051,51 @@ hammerjs@^2.0.8:
   resolved "https://registry.npmjs.org/hammerjs/-/hammerjs-2.0.8.tgz#04ef77862cff2bb79d30f7692095930222bf60f1"
   integrity sha1-BO93hiz/K7edMPdpIJWTAiK/YPE=
 
-handlebars@^4.0.11, handlebars@^4.0.13, handlebars@^4.0.4, handlebars@^4.0.6, handlebars@^4.1.0, handlebars@^4.1.2, handlebars@^4.3.1, handlebars@^4.5.1:
+handlebars@^4.0.11, handlebars@^4.0.4, handlebars@^4.0.6:
+  version "4.3.4"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.3.4.tgz#aab065294c27ad16ff4e711240a7288d2753306d"
+  integrity sha512-vvpo6mpK4ScNC1DbGRZ2d5BznS6ht0r1hi20RivsibMc6jNvFAeZQ6qk5VNspo6SOwVOJQbjHyBCpuS7BzA1pw==
+  dependencies:
+    neo-async "^2.6.0"
+    optimist "^0.6.1"
+    source-map "^0.6.1"
+  optionalDependencies:
+    uglify-js "^3.1.4"
+
+handlebars@^4.0.13:
+  version "4.5.1"
+  resolved "https://registry.npmjs.org/handlebars/-/handlebars-4.5.1.tgz#8a01c382c180272260d07f2d1aa3ae745715c7ba"
+  integrity sha512-C29UoFzHe9yM61lOsIlCE5/mQVGrnIOrOq7maQl76L7tYPCgC1og0Ajt6uWnX4ZTxBPnjw+CUvawphwCfJgUnA==
+  dependencies:
+    neo-async "^2.6.0"
+    optimist "^0.6.1"
+    source-map "^0.6.1"
+  optionalDependencies:
+    uglify-js "^3.1.4"
+
+handlebars@^4.1.0:
+  version "4.4.2"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.4.2.tgz#8810a9821a9d6d52cb2f57d326d6ce7c3dfe741d"
+  integrity sha512-cIv17+GhL8pHHnRJzGu2wwcthL5sb8uDKBHvZ2Dtu5s1YNt0ljbzKbamnc+gr69y7bzwQiBdr5+hOpRd5pnOdg==
+  dependencies:
+    neo-async "^2.6.0"
+    optimist "^0.6.1"
+    source-map "^0.6.1"
+  optionalDependencies:
+    uglify-js "^3.1.4"
+
+handlebars@^4.1.2, handlebars@^4.3.1:
+  version "4.4.3"
+  resolved "https://registry.yarnpkg.com/handlebars/-/handlebars-4.4.3.tgz#180bae52c1d0e9ec0c15d7e82a4362d662762f6e"
+  integrity sha512-B0W4A2U1ww3q7VVthTKfh+epHx+q4mCt6iK+zEAzbMBpWQAwxCeKxEGpj/1oQTpzPXDNSOG7hmG14TsISH50yw==
+  dependencies:
+    neo-async "^2.6.0"
+    optimist "^0.6.1"
+    source-map "^0.6.1"
+  optionalDependencies:
+    uglify-js "^3.1.4"
+
+handlebars@^4.5.1:
   version "4.5.3"
   resolved "https://registry.npmjs.org/handlebars/-/handlebars-4.5.3.tgz#5cf75bd8714f7605713511a56be7c349becb0482"
   integrity sha512-3yPecJoJHK/4c6aZhSvxOyG4vJKDshV36VHp0iVCDVh7o9w2vwi3NSnL2MMPj3YdduqaBcu7cGbggJQM0br9xA==
@@ -9600,6 +9672,13 @@ lower-case@^1.1.1:
   resolved "https://registry.npmjs.org/lower-case/-/lower-case-1.1.4.tgz#9a2cabd1b9e8e0ae993a4bf7d5875c39c42e8eac"
   integrity sha1-miyr0bno4K6ZOkv31YdcOcQujqw=
 
+lower-case@^2.0.1:
+  version "2.0.1"
+  resolved "https://registry.npmjs.org/lower-case/-/lower-case-2.0.1.tgz#39eeb36e396115cc05e29422eaea9e692c9408c7"
+  integrity sha512-LiWgfDLLb1dwbFQZsSglpRj+1ctGnayXz3Uv0/WO8n558JycT5fg6zkNcnW0G68Nn0aEldTFeEfmjCfmqry/rQ==
+  dependencies:
+    tslib "^1.10.0"
+
 lowercase-keys@1.0.0:
   version "1.0.0"
   resolved "https://registry.npmjs.org/lowercase-keys/-/lowercase-keys-1.0.0.tgz#4e3366b39e7f5457e35f1324bdf6f88d0bfc7306"
@@ -10123,6 +10202,14 @@ no-case@^2.2.0:
   integrity sha512-rmTZ9kz+f3rCvK2TD1Ue/oZlns7OGoIWP4fc3llxxRXlOkHKoWPPWJOfFYpITabSow43QJbRIoHQXtt10VldyQ==
   dependencies:
     lower-case "^1.1.1"
+
+no-case@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/no-case/-/no-case-3.0.2.tgz#2b03928510318591854c0423e504d13b21234263"
+  integrity sha512-Yber3mEOA3T9+as7Z70TJUQCUPRmmq6s8NmsZX5aSB1qk+Mt+3a5JVPpnAnONUShLTkMDF4PJY3h0GKlXdRTNA==
+  dependencies:
+    lower-case "^2.0.1"
+    tslib "^1.10.0"
 
 node-dir@^0.1.17:
   version "0.1.17"
@@ -12549,9 +12636,9 @@ schema-utils@^1.0.0:
     ajv-keywords "^3.1.0"
 
 schema-utils@^2.0.0:
-  version "2.6.0"
-  resolved "https://registry.npmjs.org/schema-utils/-/schema-utils-2.6.0.tgz#68a259aabbef9d08d1252c2e63c398e476308e80"
-  integrity sha512-UlPB1ME4i/71cih/Rv92gK8043CrJTc2mjkyxDp4pdJ7ZfzY0g0hdGjjDB23jX3X+NXSneCdQbScGhn6K2tbpQ==
+  version "2.5.0"
+  resolved "https://registry.npmjs.org/schema-utils/-/schema-utils-2.5.0.tgz#8f254f618d402cc80257486213c8970edfd7c22f"
+  integrity sha512-32ISrwW2scPXHUSusP8qMg5dLUawKkyV+/qIEV9JdXKx+rsM6mi8vZY8khg2M69Qom16rtroWXD3Ybtiws38gQ==
   dependencies:
     ajv "^6.10.2"
     ajv-keywords "^3.4.1"
@@ -12764,12 +12851,13 @@ slice-ansi@^2.1.0:
     astral-regex "^1.0.0"
     is-fullwidth-code-point "^2.0.0"
 
-snake-case@^2.1.0:
-  version "2.1.0"
-  resolved "https://registry.npmjs.org/snake-case/-/snake-case-2.1.0.tgz#41bdb1b73f30ec66a04d4e2cad1b76387d4d6d9f"
-  integrity sha1-Qb2xtz8w7GagTU4srRt2OH1NbZ8=
+snake-case@^3.0.2:
+  version "3.0.2"
+  resolved "https://registry.npmjs.org/snake-case/-/snake-case-3.0.2.tgz#2cc0eacf4edaab998f21af579b5a72b0766f91dd"
+  integrity sha512-1fRJdasXJTcsrGnUkDsnKNjHoP9NGclbIkYyY6Vv0vBVgz32rqhPFPg/Y0yIP4hwOd41Dh8rocCRHjNIuK4EZg==
   dependencies:
-    no-case "^2.2.0"
+    dot-case "^3.0.2"
+    tslib "^1.10.0"
 
 snapdragon-node@^2.0.1:
   version "2.1.1"
@@ -12908,10 +12996,18 @@ source-map-support@^0.4.15:
   dependencies:
     source-map "^0.5.6"
 
-source-map-support@^0.5.16, source-map-support@^0.5.6, source-map-support@~0.5.10, source-map-support@~0.5.12:
+source-map-support@^0.5.16:
   version "0.5.16"
   resolved "https://registry.npmjs.org/source-map-support/-/source-map-support-0.5.16.tgz#0ae069e7fe3ba7538c64c98515e35339eac5a042"
   integrity sha512-efyLRJDr68D9hBBNIPWFjhpFzURh+KJykQwvMyW5UiZzYwoF6l4YMMDIJJEyFWxWCqfyxLzz6tSfUFR+kXXsVQ==
+  dependencies:
+    buffer-from "^1.0.0"
+    source-map "^0.6.0"
+
+source-map-support@^0.5.6, source-map-support@~0.5.10, source-map-support@~0.5.12:
+  version "0.5.13"
+  resolved "https://registry.yarnpkg.com/source-map-support/-/source-map-support-0.5.13.tgz#31b24a9c2e73c2de85066c0feb7d44767ed52932"
+  integrity sha512-SHSKFHadjVA5oR4PPqhtAVdcBWwRYVd6g6cAXnIbRiIwc2EhPrTuKUBdSLvlEKyIP3GCf89fltvcZiP9MMFA1w==
   dependencies:
     buffer-from "^1.0.0"
     source-map "^0.6.0"
@@ -13714,7 +13810,7 @@ ts-node@^8.5.4:
     source-map-support "^0.5.6"
     yn "^3.0.0"
 
-tslib@^1.8.1, tslib@^1.9.0:
+tslib@^1.10.0, tslib@^1.8.1, tslib@^1.9.0:
   version "1.10.0"
   resolved "https://registry.npmjs.org/tslib/-/tslib-1.10.0.tgz#c3c19f95973fb0a62973fb09d90d961ee43e5c8a"
   integrity sha512-qOebF53frne81cf0S9B41ByenJ3/IuH8yJKngAX35CmiZySA0khhkovshKK+jGCaMnVomla7gVlIcc3EvKPbTQ==

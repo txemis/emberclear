@@ -1,7 +1,7 @@
 'use strict';
 
 const Funnel = require('broccoli-funnel');
-const mergeTrees = require('broccoli-merge-trees');
+// const mergeTrees = require('broccoli-merge-trees');
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const gitRev = require('git-rev-sync');
 
@@ -181,16 +181,32 @@ module.exports = function(defaults) {
     destDir: '/prismjs/',
   });
 
-  // Embroider is too buggy atm
-  // return require('@embroider/compat').compatBuild(app, require('@embroider/webpack').Webpack, {
-  //   extraPublicTrees: [qrScannerWorker],
-  //   // staticAddonTestSupportTrees: true,
-  //   // staticAddonTrees: true,
-  //   // staticHelpers: true,
-  //   // staticComponents: true,
-  //   // splitAtRoutes: true,
-  //   // skipBabel: [],
-  // });
+  // Compat Notes:
+  //
+  // /tests:
+  //  - global is not defined
+  //  - The tests file was not loaded. Make sure your tests index.html includes "assets/tests.js".
+  return require('@embroider/compat').compatBuild(app, require('@embroider/webpack').Webpack, {
+    extraPublicTrees: [qrScannerWorker, prism],
+    // prior errors prevent this from being tested
+    // staticAddonTestSupportTrees: true,
 
-  return mergeTrees([app.toTree(), qrScannerWorker, prism]);
+    // ember-intl:
+    //  - TypeError: Cannot read property 'localeFactory' of undefined
+    // staticAddonTrees: true,
+
+    // no issues noticed
+    staticHelpers: true,
+
+    // no issues noticed
+    staticComponents: true,
+
+    // nothing different happened here?
+    // maybe this requires the static addon options?
+    splitAtRoutes: true,
+
+    // skipBabel: [],
+  });
+
+  // return mergeTrees([app.toTree(), qrScannerWorker, prism]);
 };
