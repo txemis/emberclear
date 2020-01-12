@@ -8,6 +8,15 @@ class BasePage extends BasePageObject {
 
     this.host = host;
   }
+
+  async navigateTo(path = '') {
+    await this._browser.url(`${this.host}/${path}`);
+
+    await this._browser.waitUntil(async () => {
+      return this._create('.top-nav');
+    });
+
+  }
 }
 
 module.exports = BasePage;

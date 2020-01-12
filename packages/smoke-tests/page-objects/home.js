@@ -19,12 +19,7 @@ class Home extends BasePageObject {
   }
 
   async visit() {
-    await this._browser.url(this.host);
-
-    await this._browser.waitUntil(async () => {
-      return this._create('.top-nav');
-    });
-
+    await this.navigateTo();
   }
 }
 

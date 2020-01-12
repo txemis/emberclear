@@ -22,6 +22,10 @@ class AddFriend extends BasePageObject {
     return this._create(`[${dataAttr}]`).getAttribute(dataAttr);
   }
 
+  async visit() {
+    await this.navigateTo('add-friend');
+  }
+
   async addFriend(key) {
     let publicKey = key.publicKey || key;
     let isUrl = publicKey.includes('/');
