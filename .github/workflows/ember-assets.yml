@@ -12,6 +12,7 @@ jobs:
       with:
         fetch-depth: 0
     - uses: simplabs/ember-asset-size-action@v1
-      working-directory: packages/frontend
       with:
         repo-token: "${{ secrets.GITHUB_TOKEN }}"
+        working-directory: packages/frontend
+
