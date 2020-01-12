@@ -11,7 +11,11 @@
             "skipFiles": [
                 "<node_internals>/**"
             ],
-            "program": "node_modules/@faltest/cli/bin/index.js"
+            "program": "node_modules/@faltest/cli/bin/index.js",
+            "args": [
+              "--browsers 2",
+              "--timeouts-override 900000"
+            ]
         }
     ]
 }

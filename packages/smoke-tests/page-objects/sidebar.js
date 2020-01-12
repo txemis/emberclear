@@ -34,7 +34,6 @@ class Sidebar extends BasePageObject {
   get contacts() {
     return this._createMany('nav.contacts a');
   }
-
 }
 
 module.exports = Sidebar;

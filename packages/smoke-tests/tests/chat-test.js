@@ -32,19 +32,19 @@ describe('chat', function() {
     });
 
     it('fresh users can begin communicating with each other', async function() {
-      await Promise.all([a.home.beginButton.click(), b.home.beginButton.click()]);
+      await Promise.all([
+        a.home.beginButton.click(),
+        b.home.beginButton.click(),
+      ]);
 
       await Promise.all([
         a.setup.onboardSelf('Person A'),
         b.setup.onboardSelf('Person B'),
       ]);
 
-      await Promise.all([
-        a.addFriend.visit(),
-        b.addFriend.visit(),
-      ]);
+      await Promise.all([a.addFriend.visit(), b.addFriend.visit()]);
 
-      let [aInviteUrl, bInviteUrl ] = await Promise.all([
+      let [aInviteUrl, bInviteUrl] = await Promise.all([
         a.inviteUrl(),
         b.inviteUrl(),
       ]);

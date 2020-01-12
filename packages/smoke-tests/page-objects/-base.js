@@ -15,7 +15,6 @@ class BasePage extends BasePageObject {
     await this._browser.waitUntil(async () => {
       return this._create('.top-nav');
     });
-
   }
 }
 
