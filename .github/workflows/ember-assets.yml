@@ -16,7 +16,8 @@ jobs:
         fetch-depth: 0
 
     - uses: rwjblue/setup-volta@v1
-      working-directory: ${{ env.cwd }}
+      with:
+        working-directory: ${{ env.cwd }}
 
     - uses: simplabs/ember-asset-size-action@v1
       with:
