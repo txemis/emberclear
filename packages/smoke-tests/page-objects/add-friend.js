@@ -18,8 +18,9 @@ class AddFriend extends BasePageObject {
 
   get inviteUrl() {
     let dataAttr = 'data-clipboard-text';
+    let element = this._create(`[${dataAttr}]`);
 
-    return this._create(`[${dataAttr}]`).getAttribute(dataAttr);
+    return element.getAttribute(dataAttr);
   }
 
   async visit() {

@@ -45,8 +45,8 @@ describe('chat', function() {
       await Promise.all([a.addFriend.visit(), b.addFriend.visit()]);
 
       let [aInviteUrl, bInviteUrl] = await Promise.all([
-        a.inviteUrl(),
-        b.inviteUrl(),
+        a.addFriend.inviteUrl,
+        b.addFriend.inviteUrl,
       ]);
 
       await Promise.all([

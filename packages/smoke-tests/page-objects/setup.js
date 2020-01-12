@@ -4,11 +4,11 @@ const BasePageObject = require('./-base');
 
 class Setup extends BasePageObject {
   get nameInput() {
-    return this._create('input[type="text"]');
+    return this._create('[data-test-name-form] [data-test-name-field]');
   }
 
   get nextButton() {
-    return this._create('.cta-with-fallback .button');
+    return this._create('[data-test-focus-card] [data-test-next]');
   }
 
   async onboardSelf(name) {
