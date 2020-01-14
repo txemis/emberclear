@@ -16,11 +16,11 @@ class AddFriend extends BasePageObject {
     };
   }
 
-  get inviteUrl() {
+  async inviteUrl() {
     let dataAttr = 'data-clipboard-text';
-    let element = this._create(`[${dataAttr}]`);
+    let pageObject = this._create(`[${dataAttr}]`);
 
-    return element.getAttribute(dataAttr);
+    return await pageObject.getAttribute(dataAttr);
   }
 
   async visit() {
