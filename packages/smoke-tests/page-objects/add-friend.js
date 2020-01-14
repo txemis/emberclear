@@ -20,7 +20,13 @@ class AddFriend extends BasePageObject {
     let dataAttr = 'data-clipboard-text';
     let pageObject = this._create(`[${dataAttr}]`);
 
-    return await pageObject.getAttribute(dataAttr);
+    console.log(await pageObject.getText());
+    console.log(await pageObject.getElement());
+    // console.log(await pageObject.waitForVisible());
+    let text = await pageObject.getAttribute(dataAttr);
+    let t2 = await pageObject.getAttribute(`[${dataAttr}]`);
+
+    return text;
   }
 
   async visit() {

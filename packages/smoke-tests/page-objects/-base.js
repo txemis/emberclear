@@ -13,7 +13,7 @@ class BasePage extends BasePageObject {
     await this._browser.url(`${this.host}/${path}`);
 
     await this._browser.waitUntil(async () => {
-      return this._create('.top-nav');
+      return this._create('[data-test-locale-toggle]');
     });
   }
 }
